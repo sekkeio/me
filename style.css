@@ -1,0 +1,79 @@
+:root {
+  --textColor: #282828;
+  --backgroundColor: rgba(247, 247, 247,.8);
+  --keyColor: #00b2ff;
+  --linkColor: var(--textColor);
+  --linkUnderlineColor: color-mix(in srgb, var(--keyColor) 100%, rgba(255, 255, 255, 0));
+}
+
+body {
+  font: 1em/1.25 IBM Plex Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: underline;
+  text-decoration-color: var(--linkUnderlineColor);
+  text-decoration-thickness: .0625em;
+  text-underline-offset: 0.25em;
+}
+
+a:hover {
+  color: var(--keyColor);
+}
+
+.layoutContainer {
+  padding: 1.5rem clamp(1.43rem, 2.5vw, 2.84rem) 3rem;
+}
+
+.header {
+  font-size: 1.5em;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.logo {
+  width: 1.75em;
+  height: 1.75em;
+  margin-right: 1em;
+  fill: var(--keyColor);
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: end;
+  column-gap: 1rem;
+}
+
+.lead {
+  font-size: clamp(2.5rem, 5vw, 5rem); /* Настраиваем кегль, равный 5% от ширины экрана, но в пределах 40—80 пк */
+}
+
+.lead p {
+  max-width: 18em; /* Ограничиваем абзацы в лиде по ширине, чтобы текст было удобно читать на широких экранах */
+}
+
+.about {
+  margin-top: 5vh; /* Добавляем отступ от шапки. Мы специально добавляем его здесь, а не в лиде, чтобы разделить ответственность. Наверняка нам захочется использовать лид на других страницах, в таком случае верхний маржин будет только мешать */
+}
+
+
+@media (width <= 576px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .header {
+    font-size: 1rem;
+  }
+
+  .nav {
+    column-gap: 1.5em;
+  }
+}
