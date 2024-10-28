@@ -10,13 +10,14 @@
   font: 20px/1.1 "IBM Plex Serif", serif;
 }
 
-.adas {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 body {
   color: var(--textColor);
   background-color: var(--backgroundColor);
+}
+
+header {
+  margin-bottom: 1em;
+  text-align: right;
 }
 
 a {
