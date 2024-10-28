@@ -1,14 +1,76 @@
 :root {
   --textColor: #282828;
+  --textColorRGB: 40, 40, 40;
   --backgroundColor: rgba(247, 247, 247,.8);
-  --keyColor: #00b2ff;
-  --linkColor: var(--textColor);
+  --keyColorRGB: 54, 124, 247;
+  --keyColor: rgb(54, 124, 247);
+  --smile: rgb(0, 165, 184);
   --linkUnderlineColor: color-mix(in srgb, var(--keyColor) 50%);
+
+  font: 20px/1.1 "IBM Plex Serif", serif;
 }
 
 body {
-  font: 1em/1.25 ALS Hauss, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: var(--textColor);
   background-color: var(--backgroundColor);
-  max-height: 1vh;
+}
+
+a {
+  color: rgb(var(--keyColorRGB));
+  text-decoration: underline;
+  text-decoration-thickness: .01em;
+  text-underline-offset: .2em;
+  text-decoration-color: rgba(var(--keyColorRGB), .8);
+}
+
+a:hover {
+  color: var(--smile);
+  text-decoration-thickness: .03em;
+  text-decoration-color: currentColor;
+} 
+
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  font-style: italic;
+  margin-bottom: .5em;
+}
+
+h1::before, p::before {
+  content: ":-) ";
+  color: var(--smile);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+h1:hover::before, p:hover:before {
+  opacity: 1;
+}
+
+
+.in-head-ghost {
+  font-weight: 200;
+  color: rgba(var(--textColorRGB), .3);
+}
+
+p {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+.container {
+  padding: 1.5rem clamp(1.43rem, 2.5vw, 2.84rem) 3rem;
+}
+
+
+@media (width <= 576px) {
+  :root {
+    font-size: 14px;
+  }
+  h1::before, p::before {
+    content: "/ ";
+    opacity: 1;
+  }
 }
