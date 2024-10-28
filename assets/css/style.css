@@ -78,7 +78,7 @@ p::before {
 }
 
 footer::before {
-  content:"c ·";
+  content:"©";
 }
 
 
@@ -116,7 +116,7 @@ footer::before {
   }
 
   footer::before {
-    content:"<footer>";
+    content:"<copyright>";
   }
 
 }
