@@ -68,7 +68,6 @@ p::before {
 
 
 .in-head-ghost {
-  font-weight: 200;
   color: rgba(var(--textColorRGB), .3);
 }
 
@@ -87,6 +86,10 @@ p {
 @media (width <= 576px) {
   :root {
     font-size: 14px;
+  }
+
+  h1, p {
+    font-weight: 300;
   }
   h1::before, p::before {
     display: block;
