@@ -20,12 +20,28 @@ header {
   text-align: right;
 }
 
+footer {
+  font-weight: 300;
+  font-style: italic;
+  font-size: .95em;
+}
+
+p {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+
 a {
   color: rgb(var(--keyColorRGB));
+  text-decoration-color: rgba(var(--keyColorRGB), .8);
   text-decoration: underline;
   text-decoration-thickness: .01em;
   text-underline-offset: .2em;
-  text-decoration-color: rgba(var(--keyColorRGB), .8);
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
 }
 
 a:hover {
@@ -41,14 +57,14 @@ h1 {
   margin-bottom: .5em;
 }
 
-h1::before, p::before {
+h1::before, p::before, footer::before {
   color: var(--textColor);
   font-size: 1em;
-  margin-right: .13em;
+  margin-right: .18em;
   transition: opacity 0.3s;
 }
 
-h1:hover:before, p:hover:before {
+h1:hover:before, p:hover:before, footer:hover:before {
   opacity: 1;
   color: var(--smile);
 }
@@ -61,23 +77,14 @@ p::before {
   content: "p ·";
 }
 
-
-
-/* h1:hover::before, p:hover:before {
-  opacity: 1;
-} */
+footer::before {
+  content:"c ·";
+}
 
 
 .in-head-ghost {
   color: rgba(var(--textColorRGB), .3);
 }
-
-p {
-  font-size: 2em;
-  font-style: italic;
-  font-weight: 200;
-}
-
 
 .container {
   padding: 1.5rem clamp(1.43rem, 2.5vw, 2.84rem) 3rem;
@@ -92,10 +99,12 @@ p {
   h1, p {
     font-weight: 300;
   }
-  h1::before, p::before {
+  h1::before, p::before, footer::before {
     display: block;
     color: var(--smile);
-    font-size: 1.5rem;
+    font-size: .9em;
+    margin-left: -.4em;
+    margin-bottom: .2rem;
   }
 
   h1::before {
@@ -104,6 +113,10 @@ p {
   
   p::before {
     content: "<p>";
+  }
+
+  footer::before {
+    content:"<footer>";
   }
 
 }
