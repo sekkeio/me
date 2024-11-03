@@ -1,11 +1,10 @@
 :root {
-  --textColor: #282828;
   --textColorRGB: 40, 40, 40;
+  --textColor: rgb(40, 40, 40);
   --backgroundColor: rgba(247, 247, 247,.8);
-  --keyColorRGB: 54, 124, 247;
   --keyColor: rgb(54, 124, 247);
-  --smile: rgb(0, 165, 184);
-  --linkUnderlineColor: color-mix(in srgb, var(--keyColor) 50%);
+  --keyColorRGB: 54, 124, 247;
+  --hover: rgb(0, 165, 184);
 
   font: 20px/1.1 "IBM Plex Serif", serif;
 }
@@ -15,15 +14,11 @@ body {
   background-color: var(--backgroundColor);
 }
 
-header {
-  margin-bottom: 1em;
-  text-align: right;
-}
-
-footer {
-  font-weight: 300;
+h1 {
+  font-size: 3em;
+  font-weight: 200;
   font-style: italic;
-  font-size: .95em;
+  margin-bottom: .5em;
 }
 
 p {
@@ -32,7 +27,6 @@ p {
   font-weight: 200;
   margin-bottom: 1em;
 }
-
 
 a {
   color: rgb(var(--keyColorRGB));
@@ -45,17 +39,25 @@ a {
 }
 
 a:hover {
-  color: var(--smile);
+  color: var(--hover);
   text-decoration-thickness: .03em;
   text-decoration-color: currentColor;
 } 
 
-h1 {
-  font-size: 3em;
-  font-weight: 200;
-  font-style: italic;
-  margin-bottom: .5em;
+
+header {
+  margin-bottom: 1em;
+  text-align: right;
 }
+
+footer {
+  font-weight: 300;
+  font-style: italic;
+  font-size: .95em;
+}
+
+
+
 
 h1::before, p::before, footer::before {
   color: var(--textColor);
@@ -66,7 +68,7 @@ h1::before, p::before, footer::before {
 
 h1:hover:before, p:hover:before, footer:hover:before {
   opacity: 1;
-  color: var(--smile);
+  color: var(--hover);
 }
 
 h1::before {
@@ -91,6 +93,8 @@ footer::before {
 }
 
 
+
+
 @media (width <= 576px) {
   :root {
     font-size: 14px;
@@ -101,7 +105,7 @@ footer::before {
   }
   h1::before, p::before, footer::before {
     display: block;
-    color: var(--smile);
+    color: var(--hover);
     font-size: .9em;
     margin-left: -.4em;
     margin-bottom: .2rem;
