@@ -13,7 +13,7 @@
 
 body {
   color: var(--textColor);
-  background-color: rgb(var(--backgroundColor), .8);
+  background-color: rgb(var(--backgroundColor));
 }
 
 h1 {
