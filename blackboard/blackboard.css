@@ -21,6 +21,7 @@
     background-color: black;
     padding: .8rem;
     overflow-y: auto;
+    font-style: italic;
 }
 
 .topic {
