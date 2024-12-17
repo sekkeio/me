@@ -1,17 +1,19 @@
 :root {
   --textColorRGB: 40, 40, 40;
   --textColor: rgb(40, 40, 40);
-  --backgroundColor: rgba(247, 247, 247,.8);
+  --backgroundColorRGB: 247, 247, 247;
+  --backgroundColor: rgb(247, 247, 247);
   --keyColor: rgb(54, 124, 247);
   --keyColorRGB: 54, 124, 247;
   --hover: rgb(0, 165, 184);
+  --hoverRGB: 0, 165, 184;
 
   font: 20px/1.1 "IBM Plex Serif", serif;
 }
 
 body {
   color: var(--textColor);
-  background-color: var(--backgroundColor);
+  background-color: rgb(var(--backgroundColor), .8);
 }
 
 h1 {
@@ -45,7 +47,7 @@ a:hover {
 } 
 
 
-header {
+.header {
   margin-bottom: 1em;
   text-align: right;
 }
@@ -84,7 +86,7 @@ footer::before {
 }
 
 
-.in-head-ghost {
+.ghostText {
   color: rgba(var(--textColorRGB), .3);
 }
 
