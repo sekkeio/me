@@ -11,6 +11,16 @@
     resize: none;
 }
 
+.board_area::placeholder {
+    opacity: 0;
+}
+
+@media (max-width: 480px) {
+    .board_area::placeholder {
+        opacity: 1;
+    }
+}
+
 .topic_input {
     display: block;
     width: 100%;
