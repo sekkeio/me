@@ -86,7 +86,8 @@ a:has(u) {
   text-decoration: none;
 }
 
-a img {
+a img,
+.works-item img {
   border: 1px transparent solid;
   box-shadow: 0 6px 20px rgb(var(--textColorRGB), .2);
 
