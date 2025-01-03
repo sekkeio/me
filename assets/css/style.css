@@ -134,13 +134,6 @@ footer {
   text-decoration-skip-ink: none;
   text-decoration-color: rgb(255, 0, 0);
   color: rgb(var(--textColorRGB), .2);
- }
-
-
- @media (max-width: 576px) {
-  h1::before, p::before, footer::before {
-    display: none;
-  }
 }
 
 
