@@ -201,27 +201,3 @@ footer {
     grid-column: span 2;
   }
 }
-
-.XL {
-  grid-column: span 5;
-
-  @media screen and (max-width: 768px) {
-    grid-column: span 2;
-  }
-}
-
-.browser_top {
-  display: block;
-  background-color: rgb(var(--backgroundColorRGB), .5) ;
-  padding: 0 .25em;
-  text-decoration: none;
-  color: var(--textColor);
-}
-
-.browser-container {
-  display: flex;
-  background-color: rgb(var(--textColorRGB), .2);
-  align-items: center;
-  padding: .5em;
-  justify-content: center
-}
