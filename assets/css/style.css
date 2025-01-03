@@ -86,16 +86,6 @@ a:has(u) {
   text-decoration: none;
 }
 
-a img,
-.works-item img {
-  border: 1px transparent solid;
-  box-shadow: 0 6px 20px rgb(var(--textColorRGB), .2);
-
-  @media (prefers-color-scheme: dark) {
-    border: 1px rgb(var(--textColorRGB), .1) solid;
-    box-shadow: none;
-  }
-}
 
 a:hover img {
   border: 1px rgb(var(--keyColorRGB)) solid;
@@ -186,6 +176,22 @@ footer {
 
 .works-item_name {
   color: var(--textColor);
+}
+
+.works-item img {
+  border: 1px transparent solid;
+  box-shadow: 0 12px 18px rgb(var(--textColorRGB), .15);
+  transition: box-shadow 1s ease;
+
+  @media (prefers-color-scheme: dark) {
+    border: 1px rgb(var(--textColorRGB), .1) solid;
+    box-shadow: none;
+  }
+}
+
+.works-item:hover img {
+  transition: box-shadow 0s ease;
+  box-shadow: none;
 }
 
 .large { 
