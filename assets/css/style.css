@@ -31,19 +31,11 @@ body {
 .layoutContainer {
   margin: 0 auto;
   color: rgb(var(--textColorRGB));
-
-  @media screen and (min-width: 1201px) {
-      width: 60%;
-  }
-
-  @media screen and (min-width: 769px) and (max-width: 1200px) {
-    width: 70%;
-  }
+  max-width: 1024px;
+  padding: 0 6%;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1em;
+    padding: 0 1rem;
   }
 }
 
