@@ -106,6 +106,7 @@ footer {
   display: block;
   color: rgb(var(--textColorRGB), .3);
   font-size: 1rem;
+  margin-top: .25em;
 }
 
 
