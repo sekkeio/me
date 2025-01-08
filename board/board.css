@@ -63,4 +63,5 @@ textarea:focus {
 
 input:focus {
     border-bottom: .01em solid rgb(var(--textColorRGB));
+    border-radius: none !important;
 }
