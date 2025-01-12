@@ -31,6 +31,7 @@
     padding: .8rem;
     overflow-y: auto;
     font-style: italic;
+    border-radius: none;
 }
 
 .topic {
@@ -62,4 +63,5 @@ textarea:focus {
 
 input:focus {
     border-bottom: .01em solid rgb(var(--textColorRGB));
+    border-radius: none !important;
 }
