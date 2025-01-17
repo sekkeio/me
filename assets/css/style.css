@@ -203,3 +203,19 @@ footer {
     grid-column: span 2;
   }
 }
+
+video {
+  width: 100%;
+}
+
+.videoContainer {
+  margin-bottom: 1.5rem;
+}
+
+.videoContainer-option {
+  background-color: rgb(var(--textColorRGB), .1);
+  padding: .5rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
