@@ -160,7 +160,7 @@ footer {
   gap: 1.5rem 1rem;
 }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .works-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -178,7 +178,7 @@ footer {
 .works-item:nth-child(4n + 3) { grid-column: span 2; } 
 .works-item:nth-child(4n + 4) { grid-column: span 3; }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .works-item:nth-child(4n + 1),
   .works-item:nth-child(4n + 2),
   .works-item:nth-child(4n + 3),
