@@ -158,9 +158,11 @@ footer {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto; 
   gap: 1.5rem 1rem;
+}
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+  .works-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -168,11 +170,20 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  grid-column: span 2;
+  position: relative;
+}
+
+.works-item:nth-child(4n + 1) { grid-column: span 3; }
+.works-item:nth-child(4n + 2) { grid-column: span 2; }
+.works-item:nth-child(4n + 3) { grid-column: span 2; } 
+.works-item:nth-child(4n + 4) { grid-column: span 3; }
 
   @media screen and (max-width: 768px) {
-    grid-column: span 2;
-  }
+  .works-item:nth-child(4n + 1),
+  .works-item:nth-child(4n + 2),
+  .works-item:nth-child(4n + 3),
+  .works-item:nth-child(4n + 4) { 
+    grid-column: span 3; }
 }
 
 .works-item_name {
@@ -196,13 +207,6 @@ footer {
   box-shadow: none;
 }
 
-.large { 
-  grid-column: span 3;
-
-  @media screen and (max-width: 768px) {
-    grid-column: span 2;
-  }
-}
 
 video {
   width: 100%;
@@ -219,4 +223,32 @@ video {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+}
+
+
+/* tags */
+
+.coming .works-item_name::after {
+  content: "Скоро опубликую";
+  display: block;
+  padding-bottom: .5rem;
+  margin-top: .5em;
+  /* text-align: right; */
+  border-right: 2px dotted rgb(var(--textColorRGB), .3);
+  border-bottom: 2px dotted rgb(var(--textColorRGB), .3);
+  color: rgb(var(--textColorRGB));
+  border-radius: 0 0 1em 0;
+  opacity: .5;
+}
+
+.archive .works-item_name::after {
+  content: "Архивная работа";
+  display: block;
+  padding-bottom: .25rem;
+  margin-top: .5em;
+  /* text-align: right; */
+  border-right: 1px solid rgb(var(--textColorRGB), .3);
+  border-bottom: 1px solid rgb(var(--textColorRGB), .3);
+  color: rgb(var(--textColorRGB));
+  opacity: .5;
 }
