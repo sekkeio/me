@@ -128,7 +128,7 @@ footer {
   display: block;
   text-align: center;
   letter-spacing: 20px;
-  color: rgb(var(--keyColorRGB), .5);
+  color: rgb(var(--linkColorRGB), .5);
   margin: .25rem 0 -.25rem;
 }
 
@@ -138,8 +138,8 @@ footer {
   gap: .75em;
   margin-top: 2em;
   margin-bottom: 2em;
-  background-color: rgb(var(--keyColorRGB), .05);
   padding: .5em .75em 2rem;
+  background-color: rgb(var(--textColorRGB), .04);
 }
 
 .education p {
