@@ -15,12 +15,15 @@ if ('ontouchstart' in window || navigator.maxTouchPoints) {
 
     links.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault();
             const url = this.href;
-            this.classList.add('hover');
-            setTimeout(() => {
-                window.location.href = url;
-            }, 200);
+
+            if (url.startsWith(window.location.origin) || url.startsWith('/')) {
+                event.preventDefault();
+                this.classList.add('hover');
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 200);
+            }
         });
     });
 }
