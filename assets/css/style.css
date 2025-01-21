@@ -4,8 +4,8 @@
   --backgroundColorRGB: 247, 247, 247;
   --backgroundColor: rgb(247, 247, 247);
   --linkColorRGB: 54, 124, 247;
-  --keyColorRGB: 0, 165, 184;
-  --keyColor: rgb(0, 165, 184);
+  --keyColorRGB: 154, 51, 0;
+  --keyColor: rgb(154, 51, 0);
 
   font: 16px/1.2 "IBM Plex Sans", sans-serif;
   font-weight: 400;
@@ -13,13 +13,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --textColorRGB: 221, 221, 204;
-    --textColor: rgb(221, 221, 204);
+    --textColorRGB: 162, 160, 157;
+    --textColor: rgb(162, 160, 157);
     --backgroundColorRGB: 22, 21, 21;
     --backgroundColor: rgb(22, 21, 21);
-    --linkColorRGB: 10, 132, 255;
-    --keyColorRGB: 0, 197, 219;
-    --keyColor: rgb(0, 197, 219);
+    --linkColorRGB: 0, 132, 255;
+    --keyColorRGB: 240,  40,  32;
+    --keyColor: rgb(240,  40,  32);
   }
 }
 
