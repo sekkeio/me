@@ -179,6 +179,9 @@ footer {
     grid-column: span 3; }
 }
 
+.works-item_name {
+  color: var(--textColor);
+}
 
 video {
   width: 100%;
