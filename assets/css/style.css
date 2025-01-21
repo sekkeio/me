@@ -23,7 +23,7 @@
   }
 }
 
-body {
+html {
   color: var(--textColor);
   background-color: var(--backgroundColor);
 }
