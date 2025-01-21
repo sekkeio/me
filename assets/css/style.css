@@ -72,13 +72,13 @@ a u {
   text-underline-offset: .25rem;
   text-decoration-skip: none;
   text-decoration-skip-ink: none;
-  transition: color .5s;
+  transition: color .2s;
 }
 
 a:hover,
 a:hover u {
   color: rgb(var(--keyColorRGB));
-  text-decoration-color: currentColor;
+  text-decoration-color: rgb(var(--keyColorRGB), .3);
 }
 
 
