@@ -7,6 +7,6 @@ links.forEach(link => {
         this.classList.add('hover');
         setTimeout(() => {
             window.location.href = url;
-        }, 500);
+        }, 200);
     });
 });
