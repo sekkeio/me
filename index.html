@@ -7,8 +7,13 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/assets/js/fotorama-4.6.4/fotorama.js"></script>
+  <link href="/assets/js/fotorama-4.6.4/fotorama.css" rel="stylesheet">
+
   <script src="assets/js/bureau.js" async></script>
   <script src="assets/js/emerge.js"></script>
+  <script src="assets/js/share-button.js"></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +31,11 @@
 
     <div class="works emerge" data-effect="slide" data-down="3em">
       <div class="works-grid">
-        <div class="works-item coming">
+        <a href="https://sekkeio.ru/blog/beshtay-keyboard/" class="works-item">
           <img loading="lazy" src="/assets/img/keyboard.png">
-          <span class="works-item_name">Дизайн клавитур «Бештау КЛ-104»
+          <span class="works-item_name"><u>Дизайн и раскладка</u> клавитуры Бештау
           </span>
-        </div>
+        </a>
         <div class="works-item coming">
           <img loading="lazy" src="/assets/img/forma-icons.png">
           <span class="works-item_name">Иконки для шрифта Forma DJR
@@ -57,9 +62,10 @@
           <span class="works-item_name"><u>Редизайн таблички</u> отдела по вопросам миграции
           </span>
         </a>
-        <a class="works-item" href="https://niseheo.ru">
-          <img loading="lazy" src="/assets/img/niseheo-page.jpeg">
-          <span class="works-item_name"><u>Сайт табачной продукции</u> Nise+ для China Tabacco</span>
+        <a href="/gen-bange/" class="works-item">
+          <img loading="lazy" src="/assets/img/gen-badge.png">
+          <span class="works-item_name"><u>Генератор бэйджиков</u> для сотрудников
+          </span>
         </a>
         <div class="works-item coming">
           <img loading="lazy" src="/assets/img/skillforce-concept.jpeg">
@@ -67,8 +73,24 @@
           </span>
         </div>
         <div class="works-item archive">
-          <img loading="lazy" src="/assets/img/niseheo-pack.jpeg">
+          <div class="fotorama" data-arrows="false">
+            <img src="assets/img/blueberry_box-niseheo.jpg">
+            <img src="assets/img/classic_box-niseheo.jpg">
+            <img src="assets/img/mint_box-niseheo.jpg">
+            <img src="assets/img/vanila_box-niseheo.jpg">
+          </div>
           <span class="works-item_name">Дизайн упаковок стиков NISE+ 
+          </span>
+        </div>
+        <div class="works-item archive">
+          <div class="fotorama" data-arrows="false">
+            <img src="/assets/img/bf_bt.jpg">
+            <img src="/assets/img/bf_mobile.jpg">
+            <img src="/assets/img/bf_pc.jpg">
+            <img src="/assets/img/bf_tv.jpg">
+            <img src="/assets/img/bf_other.jpg">
+          </div>
+          <span class="works-item_name">Рекламная компания «Блэк Фрайдей»
           </span>
         </div>
         <div class="works-item archive">
