@@ -8,7 +8,41 @@
   src: url("../font/TTCommons-Bold.ttf"); }
 
 :root {
+  --linkColorRGB: 54, 124, 247;
+  --keyColorRGB: 154, 51, 0;
   font: 16px/1.3 "IBM Plex Sans", sans-serif;
+}
+
+.archive_bagde_info {
+  padding: .5em;
+  background-color: rgb(235, 230, 216);
+}
+
+.archive_bagde_info p {
+  max-width: 960px;
+}
+
+a,
+a u {
+  color: rgb(var(--linkColorRGB));
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--linkColorRGB), .3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .25rem;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+  transition: color .2s;
+}
+
+a:hover,
+a:hover u {
+  color: rgb(var(--keyColorRGB));
+  text-decoration-color: rgb(var(--keyColorRGB), .3);
+}
+
+
+a:has(u) {
+  text-decoration: none;
 }
 
 button {
